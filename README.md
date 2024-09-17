@@ -1,4 +1,5 @@
 # fluskama
+[![docs.rs](https://img.shields.io/docsrs/fluskama)](https://docs.rs/fluskama) [![Crates.io Total Downloads](https://img.shields.io/crates/d/fluskama)](https://lib.rs/fluskama)
 
 an [askama](https://github.com/djc/askama) wrapper for the [fluffer](https://codeberg.org/catboomer/fluffer)
 gemini server framework. it eases serving gemini pages written in
