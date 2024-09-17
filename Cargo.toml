@@ -1,9 +1,11 @@
 [package]
 name = "fluskama"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Lux Aliaga <me@lux.rip>"]
-respository = "https://git.sr.ht/~nixgoat/fluskama"
+description = "an askama wrapper for the fluffer gemini server framework"
+repository = "https://git.sr.ht/~nixgoat/fluskama"
+documentation = "https://docs.rs/fluskama"
 license = "LGPL-3.0-or-later"
 
 [dependencies]
