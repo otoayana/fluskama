@@ -23,7 +23,7 @@
 //! #     let template = Page {
 //! #         name: String::from("John Doe"),
 //! #         age: 21
-//! #     }
+//! #     };
 //! #
 //! FluffTemplate::from(template)
 //! # }
