@@ -182,7 +182,7 @@ dependencies = [
 
 [[package]]
 name = "fluskama"
-version = "0.1.0"
+version = "0.1.2"
 dependencies = [
  "askama",
  "fluffer",
