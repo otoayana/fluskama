@@ -9,24 +9,24 @@
 //! we can call `FluffTemplate::from()`
 //!
 //! ```rust
-//! # use fluskama::FluffTemplate;
-//! # use askama::Template;
-//! #
-//! # #[derive(Template)]
-//! # #[template(path = "page.gmi", escape = "txt")]
-//! # struct Page {
-//! #     name: String,
-//! #     age: u8,
-//! # }
-//! #
-//! # async fn page() -> FluffTemplate<Page> {
-//! #     let template = Page {
-//! #         name: String::from("John Doe"),
-//! #         age: 21
-//! #     };
-//! #
-//! FluffTemplate::from(template)
-//! # }
+//! use fluskama::FluffTemplate;
+//! use askama::Template;
+//!
+//! #[derive(Template)]
+//! #[template(path = "page.gmi", escape = "txt")]
+//! struct Page {
+//!     name: String,
+//!     age: u8,
+//! }
+//!
+//! async fn page() -> FluffTemplate<Page> {
+//!     let template = Page {
+//!         name: String::from("John Doe"),
+//!         age: 21
+//!     };
+//!
+//!     FluffTemplate::from(template)
+//! }
 //! ```
 use askama::Template;
 use fluffer::{async_trait, GemBytes};
