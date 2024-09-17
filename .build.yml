@@ -1,0 +1,19 @@
+image: archlinux
+packages:
+  - cargo
+secrets:
+  - 54739cef-610f-46e0-9073-5050f7acbd28
+sources:
+  - https://git.sr.ht/~nixgoat/fluskama
+tasks:
+  - mirror: |
+      cd fluskama
+      git remote set-head origin -d
+      ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts
+      git push --prune git@github.com:otoayana/fluskama.git '+refs/remotes/origin/*:refs/heads/*' '+refs/tags/*:refs/tags/*'
+  - build: |
+      cd fluskama
+      cargo build --release
+  - test: |
+      cd fluskama
+      cargo test --release
