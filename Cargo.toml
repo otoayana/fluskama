@@ -1,0 +1,11 @@
+[package]
+name = "fluskama"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lux Aliaga <me@lux.rip>"]
+respository = "https://git.sr.ht/~nixgoat/fluskama"
+license = "LGPL-3.0-or-later"
+
+[dependencies]
+askama = "0.12"
+fluffer = "4"
